@@ -1,9 +1,6 @@
 {
-  "name": "Ultra Pacer Preloaded",
+  "name": "Ultra Pacer Multi",
   "short_name": "UltraPacer",
   "start_url": ".",
-  "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#000000",
-  "icons": []
+  "display": "standalone"
 }

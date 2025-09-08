@@ -1,5 +1,4 @@
-
-const STATE = {
+const PRELOADED={
   "course": [
     {
       "name": "Start/Finish Area",
@@ -68,24 +67,11 @@ const STATE = {
     {
       "name": "Finish",
       "mile": 104.24
-    },
-    {
-      "name": "nan",
-      "mile": 104.24
     }
   ],
   "startTimeISO": "2025-09-19T18:00",
-  "paceSecPerMile": 1036,
+  "paceSecPerMile": 941,
   "actuals": {},
   "projectionMode": "from-last-actual"
 };
-function render(){
-  let tbody=document.getElementById("tbody");
-  tbody.innerHTML="";
-  STATE.course.forEach((row,i)=>{
-    let tr=document.createElement("tr");
-    tr.innerHTML=`<td>${i}</td><td>${row.name}</td><td>${row.mile}</td><td>${STATE.startTimeISO}</td><td><input></td><td>-</td>`;
-    tbody.appendChild(tr);
-  });
-}
-render();
+console.log('Ultra Pacer state',PRELOADED);
